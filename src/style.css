@@ -1,0 +1,10 @@
+:root{--font-ui-small:13px;--font-ui-smaller:12px;--font-semibold:600;--radius-m:6px;--radius-s:4px;--background-secondary:var(--framer-color-bg-secondary,#f1f1f1);--background-primary:var(--framer-color-bg,#fff);--text-accent:var(--framer-color-tint,#1769ff);--text-muted:var(--framer-color-text-secondary,#666);--background-modifier-border:var(--framer-color-divider,#ddd);--background-modifier-hover:var(--framer-color-bg-hover,#eee)}
+body.svgdiagram-modal{width:auto;margin:0;padding:12px;color:var(--framer-color-text,#222);background:var(--background-primary);font-family:Inter,system-ui,sans-serif}
+.svgdiagram-modal *{box-sizing:border-box}
+.svgdiagram-modal .sd-workspace{display:flex;flex-direction:column-reverse;gap:14px}
+.svgdiagram-modal .sd-controls,.svgdiagram-modal .sd-preview-panel{width:100%;min-width:0}
+.svgdiagram-modal .sd-controls{max-height:none}
+.svgdiagram-modal .sd-preview{min-height:160px;max-height:38vh}
+.svgdiagram-modal .sd-preview>svg,.svgdiagram-modal .sd-preview>img{width:auto;max-width:100%;max-height:calc(38vh - 24px);height:auto}
+.svgdiagram-modal button,.svgdiagram-modal input,.svgdiagram-modal textarea,.svgdiagram-modal select{font:inherit;color:var(--framer-color-text,#222);background:var(--framer-color-bg-secondary,#f1f1f1);border:1px solid var(--background-modifier-border);border-radius:4px;padding:7px}
+.svgdiagram-modal button{cursor:pointer}.svgdiagram-modal button.mod-cta{background:var(--framer-color-tint,#1769ff);color:#fff}.svgdiagram-modal button:disabled{opacity:.5;cursor:default}

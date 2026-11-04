@@ -1,0 +1,6 @@
+{
+  "id": "4e672a",
+  "name": "SVG Diagram",
+  "modes": ["canvas"],
+  "icon": "/icon.svg"
+}
