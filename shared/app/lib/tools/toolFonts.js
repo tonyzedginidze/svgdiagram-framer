@@ -23,6 +23,10 @@ const FACE_URLS = {
   "archivo": { "latin": { 400: archivoLatin400, 700: archivoLatin700 }, "latin-ext": { 400: archivoLatinExt400, 700: archivoLatinExt700 } },
   "barlow-condensed": { "latin": { 400: barlowCondensedLatin400, 700: barlowCondensedLatin700 }, "latin-ext": { 400: barlowCondensedLatinExt400, 700: barlowCondensedLatinExt700 } },
 };
+export function toolFontAssets() {
+  return Object.values(FACE_URLS).flatMap(subsets => Object.values(subsets).flatMap(Object.values));
+}
+
 const WEIGHTS = Object.values(FONT_WEIGHTS);
 const [PRIMARY_SUBSET] = FONT_SUBSETS;
 async function fontBytes(url) {
